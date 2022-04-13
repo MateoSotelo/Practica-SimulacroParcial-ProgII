@@ -1,0 +1,15 @@
+Persona
+	string NombreApellido
+	int DNI
+	double Saldo
+	List<Movimiento> HistoricoMovimientos
+Movimiento
+	int ID
+	DateTime Fecha
+	string Descripcion
+	bool EsEnvio
+	double Monto
+Logica
+	short POST(int dniEnvia,int dniRecibe,string descripcion,double monto)
+	short DELETE(int idMovimiento) 
+	short ObtenerListaMovimientos(int dni)
